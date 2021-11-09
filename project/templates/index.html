@@ -1,0 +1,19 @@
+<html>
+<body>
+<head>
+<meta charset="UTF-8">
+<title>Cloud Analytics Project</title>
+
+</head>
+<form action="/detect" method="post" enctype="multipart/form-data">
+<h2>Cloud Analytics Project</h2>
+
+<br><br>
+<input type="file" name="file"><br>
+<input type="submit" value="Detect"><br><br>
+{% if text %}
+The text is {{ text }}
+{% endif %}
+</form>
+</body>
+</html>
